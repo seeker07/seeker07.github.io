@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<title>Academics</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<style type="text/css">
+html{
+ scroll-behavior:smooth}
+#section1 {
+  height: 300px;
+}
+.footer {
+  padding: 51px;
+  text-align: center;
+  background: #ddd;
+}
+.button1{border-radius: 4px;
+  background-color: #77511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;}
+.button1:hover {
+
+  box-shadow: 0 51px 51px 0 rgba(0,0,0,0.24), 0 51px 51px 0 rgba(0,0,0,0.19);
+}
+.button2{transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;}
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: gray;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+.left {
+  left: 0;
+}
+
+
+.right {
+  left: 50%;
+}
+
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 9px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+  left: 31px;
+  }
+  
+
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  .right {
+  left: 0%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+  
+</div>
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>YEAR 1</h2><a href="#section1"><i><button class ="button2">Summary</button></i></a>
+      <p>Studied C programming language,basics of mechanical,civil,electrical engineering(exploring other domains),programming paradigms,python.
+	  completed few courses on edx,read dennis ritchie.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>SEM-3</h2>
+      <p>Math:Transforms,Statistics(correlation:karl pearson's cof,Regression,Curve fitting(using least squares),eq sloving using rf and newton raphson ,numerical integration..---------</br></br>
+Analog and digital electronics..-----------</br></br>DS:DS,recursion(TOH,Ackerman func,fibonacci seq,factorial,gcd)[sartaj sahni]..-----------                              </br></br>Computer Org:Memory,IO,CPU buses,CONTROL..--------</br></br>
+ Unix and shell programming(file commands,vi editor,process related commands(ps,at,cron,nice,bg),perl).. --------</br></br>Discrete mathematical structures: logic,relations functions,pigeonhole principle,
+posets,hasse diagrams,principle of inclusion and exclusion,derangements,recurrence relations(first order,second order homogeneous),Graphs(subgraph,complements,isomorphism,euler trails and circuits),Trees(rooted trees,weighted trees and prefix codes)[lectures by Kamala kritivasan ji]..------</p>
+    </div>
+  </div>
+  <div class="container left" id="section2">
+    <div class="content">
+      <h2>SEM-4</h2>
+      <p>Math:numerical solutions of ODEs,first second order. probability distribution,joint probability distribution,sampling theory,stochastic process..-----------</br></br>
+object oriented programming,java(JDK,multithreaded prog. )..------------</br></br>Design and Analysis of algorithms(fundamental data structures,stacks qs sets dics,divide and conquer,strassens' matrix multiplication,decrease and conquer topological sort,greedy approach,minimum cost spanning trees,prim and kruskal,sssp dijkstra,huffman coding,transform and conquer heap sort...dynamic programming,method and multistage graphs ,belman ford,apsp floyd's algorithm..backtracking,branch and bound,p,np,np-complete,np-hard problems)[anany levitin,horowitz sahni]..----------</br></br
+>Microprocessors and Microcontrollers: x86 microprocessor(x86 addressing modes,..assembly programming,..arithmetic and logic instructions,..int 21h,int 10h programming,x86 pc and interrupt assignment,..memory and memory interfacing,memory address decoding,16 bit memory interfacing,..8255 io programming,..Risc design philosophy,ARM design,..ARM instruction set(data processing instructions ,branch instructions..))..----------</br></br>
+Software Engineering:models,requirements engineering processes,software testing(dev test,tdd,release test,user test,test automation),software evolution,evolution processes,program evolution dynamics,software maintenance,legacy system management,agile dev,agile methods:SCRUM[ian sommerville]..-------------</br></br>Data Communication: internet history,standards and administration,tcp/ip vs osi,physical layer (data and signals,transmission impairement,data rate limits,digital transmission,line coding and pcm for digital and analog data,transmission modes,analog transmission;digital to analog conversion)
+,bandwidth utilization(multiplexing and spread spectrum),switching(circuit,packet,virtual),error detection and correction,block coding ,cyclic codes ,checksum,forward error correction,,media access control(random,controlled,channelization),wired lan,wireless lan,wimax,cellular,satellite telephony.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>SEM-5</h2>
+      <p>Entrepreneurship..-------------</br></br>Computer Networks:App,Transport,Network layer,cellular internet,streaming video;udp streaming,http streaming,adaptive streaming and DASH,CDNs[kurose,ross]
+..-------------</br></br>DBMS:Three schema arch and data independence,Conceptual data modeling using entities and relationships,Relational model,Relational Algebra,SQL,Normalization,Transaction[Navathe,Ramakrishnan]..-------------</br></br>TOC:strings,languages,FSA,REs,kleenes theorem,manipulating and simplifying REs,how many RLs,showing a language is not regular,closure properties of RLs,CFGs and PDA,deterministic and non deterministic PDAs,Turing machines,decidability Undecidability,PCP,quantum computers,church turing thesis[Elaine Rich]..-------------</br></br>J2EE(enumerations,autoboxing. collections framework,string handling)..-------------</br></br>Dot Net(C#)</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>SEM-6</h2>
+      <p>Cryptography ,Network Security and Cyber Law..-------------</br></br>Computer Graphics..-------------</br></br>System software and Compiler Design:Machine architecture of SIC/SICXE,Assemblers,Macroprocessors,Loaders and Linkers,Compilers[system software by Leland,compilers by sethi and ullman]..-------------</br></br>Operating Systems.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>SEM-7</h2>
+      <p>Web Technology..-------------</br></br>Advanced Computer Architectures..-------------</br></br>Machine Learning..-------------</br></br>cloud computing..-------------</br></br>storage area networks.</p>
+    </div>
+  </div>
+
+<div class="container left">
+    <div class="content">
+      <h2>SEM-8</h2>
+      <p>iot..-------------</br></br>Big Data..-------------</br></br>System modeling..-------------</br></br>Internship.</p>
+    </div>
+  </div>
+<div class="container right">
+    <div class="content"  id="section1">
+      <h2>Summary</h2>
+      <p>Computer Engineering Curriculum with Math and core subjects,and an Internship.</p>
+    </div>
+  </div>
+</div>
+<div class="footer"><a href="fourth.html"><button class="button1">Contact</button></a>
+<a href="index.html"><button class="button1">Home</button></a></div>
+
+</body>
+</html>
